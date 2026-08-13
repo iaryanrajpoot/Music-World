@@ -1,10 +1,8 @@
-import { Instagram, Mail, Youtube } from "lucide-react";
+import { InstagramIcon } from "./InstagramIcon";
 
 // Placeholder destinations — swap these hrefs for your own.
 const links = [
-  { href: "https://instagram.com/", label: "Instagram", Icon: Instagram },
-  { href: "https://youtube.com/", label: "YouTube", Icon: Youtube },
-  { href: "mailto:hello@example.com", label: "Email", Icon: Mail },
+  { href: "https://instagram.com/iaryanrajpoot", label: "Instagram", Icon: InstagramIcon },
 ];
 
 export default function SocialLinks() {
@@ -17,9 +15,9 @@ export default function SocialLinks() {
           target="_blank"
           rel="noreferrer noopener"
           aria-label={label}
-          className="flex h-7 w-7 items-center justify-center rounded-full text-cream/70 transition-colors hover:bg-white/10 hover:text-cream focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber"
+          className="flex h-7 w-7 items-center justify-center rounded-full transition-transform hover:scale-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber"
         >
-          <Icon size={15} strokeWidth={1.75} />
+          <Icon className="h-[18px] w-[18px]" />
         </a>
       ))}
     </div>

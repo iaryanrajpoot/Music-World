@@ -1,6 +1,6 @@
 import ClockWidget from "@/components/ClockWidget";
 // import ListenerCount from "@/components/ListenerCount";
-// import SocialLinks from "@/components/SocialLinks";
+import SocialLinks from "@/components/SocialLinks";
 import Player from "@/components/Player";
 
 export default function Home() {
@@ -15,16 +15,16 @@ export default function Home() {
       <div className="fixed inset-0 -z-10 grain-overlay" />
 
       {/* 3. fixed top row */}
-      <div className="fixed inset-x-0 top-0 z-20 grid grid-cols-3 items-start gap-2 pl-[max(1rem,env(safe-area-inset-left))] pr-[max(1rem,env(safe-area-inset-right))] pt-[max(1rem,env(safe-area-inset-top))]">
-        <div className="justify-self-start">
+      <div className="fixed inset-x-0 top-0 z-20 flex items-start justify-between gap-2 pl-[max(1rem,env(safe-area-inset-left))] pr-[max(1rem,env(safe-area-inset-right))] pt-[max(1rem,env(safe-area-inset-top))]">
+        <div>
           <ClockWidget />
         </div>
-        {/* <div className="justify-self-center">
+        {/* <div>
           <ListenerCount />
         </div> */}
-        {/* <div className="justify-self-end">
+        <div>
           <SocialLinks />
-        </div> */}
+        </div>
       </div>
 
       {/* spacer so the fixed top row doesn't visually collide on very short viewports */}
