@@ -24,7 +24,7 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Music World — An Evening On Tape",
+  title: "Made with ❤️ By Aryan",
   description:
     "A late-afternoon cassette counter.",
 };
