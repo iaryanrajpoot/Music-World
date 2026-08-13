@@ -25,8 +25,11 @@ const spaceMono = Space_Mono({
 
 export const metadata: Metadata = {
   title: "Made with ❤️ By Aryan",
-  description:
-    "A late-afternoon cassette counter.",
+  description: "A late-afternoon cassette counter.",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+  },
 };
 
 export const viewport: Viewport = {
